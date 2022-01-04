@@ -72,9 +72,9 @@ jobs:
       uses: SecureCodeWarrior/github-action-add-sarif-contextual-training@v1.0.6
       with:
         # Relative location of SARIF file(s) to process
-        inputSarifFile: /results/javascript.sarif
+        inputSarifFile: ../results/javascript.sarif
         # Relative destination location for processed SARIF file(s)
-        outputSarifFile: /results/processed.sarif
+        outputSarifFile: ../results/processed.sarif
         # Provide `secrets.GITHUB_TOKEN` to use the GitHub access token automatically supplied by GitHub Workflows
     - run: | 
         cd ../results

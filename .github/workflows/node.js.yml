@@ -76,6 +76,10 @@ jobs:
         # Relative destination location for processed SARIF file(s)
         outputSarifFile: /results/processed.sarif
         # Provide `secrets.GITHUB_TOKEN` to use the GitHub access token automatically supplied by GitHub Workflows
+    - run: | 
+        cd ../results
+        ls
+        pwd
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v1
       with:
